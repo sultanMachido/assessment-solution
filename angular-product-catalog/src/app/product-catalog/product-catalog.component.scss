@@ -1,0 +1,44 @@
+.product-catalog-container {
+  width: 100%;
+  margin: 0 auto;
+
+  h1 {
+    text-align: center;
+  }
+}
+
+input,
+select {
+  width: auto;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.products-container {
+  width: 94%;
+  margin: 0 auto;
+}
+
+.input-section {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  align-items: center;
+}
+
+.price-range {
+  display: flex;
+  gap: 10px;
+}
+
+.product-display {
+  display: block;
+  width: 300px;
+}

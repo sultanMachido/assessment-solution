@@ -1,0 +1,16 @@
+<div class="modal-overlay" (click)="closeModal()">
+  <div class="modal-content" (click)="$event.stopPropagation()">
+    <button class="close-btn" (click)="closeModal()">✖</button>
+    <h2>{{ product.title }}</h2>
+    <img [src]="product.thumbnail" alt="{{ product.title }}" />
+    <p>Price:</p>
+    <input type="text" />
+    <p>Category:</p>
+    <input type="text" />
+    <p>Title:</p>
+    <input type="" />
+    <div>
+      <button class="modal-edit-button">Edit</button>
+    </div>
+  </div>
+</div>

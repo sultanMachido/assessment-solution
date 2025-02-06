@@ -1,0 +1,48 @@
+<div class="product-catalog-container">
+  <h1>Product Catalog</h1>
+  <section class="input-section">
+    <div>
+      <p>Search:</p>
+      <input type="text" [formControl]="searchForProducts" />
+    </div>
+
+    <div>
+      <p>Category:</p>
+      <select
+        type="text"
+        placeholder="category"
+        [formControl]="searchByCategory"
+      >
+        <option value=""></option>
+        <option value="beauty">Beauty</option>
+        <option value="fragrances">Fragrances</option>
+        <option value="furniture">Furniture</option>
+      </select>
+    </div>
+
+    <div>
+      <p>Price:</p>
+      <div class="price-range">
+        <input type="number" placeholder="min price" [formControl]="minPrice" />
+        <input type="number" placeholder="max price" [formControl]="maxPrice" />
+      </div>
+    </div>
+  </section>
+
+  @if(isLoading){
+  <div>
+    <p>...loading</p>
+  </div>
+  } @else{
+  <div class="products-container">
+    <ul>
+      <app-product-display
+        *ngFor="let product of filteredProducts"
+        [product]="product"
+        class="product-display"
+      ></app-product-display>
+    </ul>
+  </div>
+
+  }
+</div>

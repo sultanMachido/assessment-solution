@@ -1,0 +1,14 @@
+<li>
+  <img [src]="product.thumbnail" alt="{{ product.title }}" />
+  <h3>{{ product.title }}</h3>
+  <p>Price:{{ product.price }}</p>
+  <p>Category:{{ product.category }}</p>
+  <p>Description:{{ product.description }}</p>
+  <p (click)="openModal()" class="edit-button">Edit</p>
+</li>
+
+<app-product-modal
+  *ngIf="showModal"
+  [product]="product"
+  (close)="closeModal()"
+></app-product-modal>
