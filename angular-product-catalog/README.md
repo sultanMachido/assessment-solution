@@ -14,6 +14,9 @@ This clear separation of concern also means logic is domicilled closer to where 
 
 Given more time i would love to have added pagination,lazy loading, and unit tests.
 
+# Running Project
+After cloning the repository,  run npm install to install the project modules, then run npm start to start your development server locally.
+
 # AngularProductCatalog
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.5.
