@@ -8,6 +8,9 @@ A few UI components were created to handle the activity display, search input an
 
 So as to limit the number of activities displayed to a user, a limit of 15 activities are shown at a time. I implemented a load more button that allows the user see older activites.
 
+#Running Application
+After cloning the project to your computer, navigate to the folder and run the command npm install to install packages. After that, you can run the command npm run dev to start the application on your  computer  
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
